@@ -219,7 +219,7 @@ sudo tail -f /var/log/apache2/error.log
 
 When uploading, use:
 ```
-http://34.228.212.209/api/number_classify.php?number=371# without parameter
+http://52.91.48.94/api/number_classify.php?number=371# without parameter
 ```
 
 Repository: [GitHub](https://github.com/Somiegithub/NumberClassApi)
