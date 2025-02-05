@@ -75,18 +75,18 @@ cd /api
 ```
 Create the `number_classify.php` file:
 ```sh
-sudo nano number_classify.php
+sudo vim number_classify.php
 ```
 
 Add the following sample code to `classify-number.php`:
 ```php
 paste the number_classify.php code inside
 ```
-Save the file (`CTRL + X`, then `Y`, then `ENTER`).
+Save the file (`esc`, then `:wq`, then `ENTER`).
 
 Test the API by visiting:
 ```
-http://34.228.212.209/api/number_classify.php?number=371
+http://52.91.48.94/api/number_classify.php?number=371
 ```
 
 ---
@@ -102,7 +102,7 @@ sudo rm 000-default.conf
 ```
 Create a new `000-default.conf` file:
 ```sh
-sudo nano 000-default.conf
+sudo vim 000-default.conf
 ```
 
 Add the following configuration:
@@ -120,7 +120,7 @@ Add the following configuration:
 </VirtualHost>
 ```
 
-Save the file (`CTRL + X`, then `Y`, then `ENTER`).
+Save the file (`esc`, then `:wq`, then `ENTER`).
 
 Restart Apache to apply changes:
 ```sh
@@ -140,7 +140,7 @@ This script processes a given number and classifies it based on specific propert
    ```
    These lines ensure that the API can be accessed from any domain and that the response is in JSON format.
 
-2. **Prime Number Check:**
+2. **Check Prime Number:**
    ```php
    function is_prime($n) {
        if ($n <= 1) return false;
@@ -151,7 +151,7 @@ This script processes a given number and classifies it based on specific propert
    ```
    This function checks whether a number is prime by iterating up to its square root.
 
-3. **Perfect Number Check:**
+3. **Check Perfect Number:**
    ```php
    function is_perfect($n) {
        if ($n <= 1) return false;
@@ -163,7 +163,7 @@ This script processes a given number and classifies it based on specific propert
    ```
    This function determines if a number is perfect by summing its divisors.
 
-4. **Armstrong Number Check:**
+4. **Check Armstrong Number:**
    ```php
    function is_armstrong($n) {
        $num = abs($n);
@@ -181,7 +181,7 @@ This script processes a given number and classifies it based on specific propert
    ```
    The script retrieves the number parameter from the URL.
 
-6. **Validating Input:**
+6. **Validate Input:**
    ```php
    if (!is_numeric($input) || !ctype_digit((string)abs($input))) {
        http_response_code(400);
@@ -222,5 +222,5 @@ When uploading, use:
 http://34.228.212.209/api/number_classify.php?number=371# without parameter
 ```
 
-Repository: [GitHub](https://github.com/Incrisz/HNG-2025)
+Repository: [GitHub](https://github.com/Somiegithub/NumberClassApi)
 
