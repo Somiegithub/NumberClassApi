@@ -1,4 +1,4 @@
-# HNG-2025 Readme for Stage 1
+# HNG-12 README for Stage 1
 
 ## Setting Up PHP 8.0 with Apache on Ubuntu
 
